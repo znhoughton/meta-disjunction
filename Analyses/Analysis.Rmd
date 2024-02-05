@@ -22,10 +22,13 @@ pilot_data = read_csv('../Data/pilot_data.csv')
 
 #clean up the data so that instead of "image_2" or "image_3", it tells us the label of the selected image.
 
-pilot_data = pilot_data %>%
+pilot_data = pilot_data %>% 
   mutate('image_selected' = ifelse(mouse_2.clicked_name == 'image_2', image1_label, image2_label)) %>%
-  select(image_to_select1, image_to_select2, image1_label, image2_label, participant, trials.thisN, condition, image_shown, image_selected, text1, prompt1)
+  select(image_to_select1, image_to_select2, image1_label, image2_label, participant, trials.thisN, condition, image_shown, text1, prompt1, image_selected, date)
 
 pilot_data = pilot_data %>%
-  rename('trials' = trials.thisN)
+  rename('trials' = trials.thisN) #rename trial
+
+pilot_data = pilot_data %>%
+  mutate(dep_variable = ifelse(image_selected == image2_label, 1, 0)) # we'll rename this later
 ```
