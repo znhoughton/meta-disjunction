@@ -1,0 +1,31 @@
+---
+title: "Analysis"
+output: html_document
+date: "2024-01-29"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(brms)
+```
+
+# Analysis
+
+## Preprocess Data
+
+First, let's load our data.
+
+```{r}
+pilot_data = read_csv('../Data/pilot_data.csv')
+
+#clean up the data so that instead of "image_2" or "image_3", it tells us the label of the selected image.
+
+pilot_data = pilot_data %>%
+  mutate('image_selected' = ifelse(mouse_2.clicked_name == 'image_2', image1_label, image2_label)) %>%
+  select(image_to_select1, image_to_select2, image1_label, image2_label, participant, trials.thisN, condition, image_shown, image_selected, text1, prompt1)
+
+pilot_data = pilot_data %>%
+  rename('trials' = trials.thisN)
+```
