@@ -27,8 +27,9 @@ pilot_data = pilot_data %>%
   select(image_to_select1, image_to_select2, image1_label, image2_label, participant, trials.thisN, condition, image_shown, text1, prompt1, image_selected, date)
 
 pilot_data = pilot_data %>%
-  rename('trials' = trials.thisN) #rename trial
+  rename('trial' = trials.thisN) #rename trial
 
 pilot_data = pilot_data %>%
   mutate(dep_variable = ifelse(image_selected == image2_label, 1, 0)) # we'll rename this later
+
 ```
