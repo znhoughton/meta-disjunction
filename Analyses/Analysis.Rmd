@@ -1,4 +1,5 @@
 ---
+,3---
 title: "Analysis"
 output: html_document
 date: "2024-01-29"
@@ -18,18 +19,81 @@ library(brms)
 First, let's load our data.
 
 ```{r}
-pilot_data = read_csv('../Data/pilot_data.csv')
+data = read_csv('../Data/data.csv')
+
+data = data %>%
+  filter(!participant %in% c('ashton', 'sdf')) %>%
+  mutate(id = as.numeric(factor(`__datetime`, levels = unique(`__datetime`)))) #didn't collect prolific ids so this is a pretty "creative" way to give each participant a unique ID. The odds of two participants finishing at the same exact second are quite slim, but we'll double check to make sure there are 50 participants
+
+length(unique(data$id)) == 50
 
 #clean up the data so that instead of "image_2" or "image_3", it tells us the label of the selected image.
 
-pilot_data = pilot_data %>% 
+data = data %>% 
   mutate('image_selected' = ifelse(mouse_2.clicked_name == 'image_2', image1_label, image2_label)) %>%
   select(image_to_select1, image_to_select2, image1_label, image2_label, participant, trials.thisN, condition, image_shown, text1, prompt1, image_selected, date)
 
-pilot_data = pilot_data %>%
+data = data %>%
   rename('trial' = trials.thisN) #rename trial
 
-pilot_data = pilot_data %>%
+data = data %>%
   mutate(dep_variable = ifelse(image_selected == image2_label, 1, 0)) # we'll rename this later
 
+data$dep_variable = as.numeric(data$dep_variable)
+
+
+```
+
+Exclusion criteria for adults:
+
+Failing the negation and mutual exclusivity trials
+
+```{r}
+data = data %>%
+  #na.omit() %>%
+  group_by(participant) %>%
+  filter(!(any((condition == 'not' | condition == 'mutual_ex') & dep_variable == 1, na.rm = T))) %>%
+  ungroup()
+
+
+  
+
+```
+
+## Statistical Model
+
+```{r}
+
+# to change to sum coding
+options (contrasts = c('contr.sum','contr.sum'))
+
+#priors = #need to decide our priors for this model
+
+m1 = brm(dep_variable ~ condition + (1 + condition|trial) + (1|participant),
+         data = data,
+         iter = 4000,
+         warmup = 2000,
+         cores = 4,
+         chains = 4,
+         prior = priors)
+```
+
+## Plots
+
+```{r}
+conditional_effects(m1)
+
+plot_data = pilot_data %>%
+  group_by(condition) %>%
+  summarize(prop_selected = sum(dep_variable) / n()) %>%
+  na.omit()
+  
+#gplot(data=df, aes(x=time, y=total_bill, fill=time)) + geom_bar(colour="black", stat="identity")
+
+#dep variable is whether they chose the same image as was labeled (e.g., if the screen showed a picture of an object and said "this is an x or a y", then if they chose the same image on the next screen, it would be 1, and 0 if not.)
+plot1 = ggplot(data = plot_data, aes(x = condition, y = prop_selected)) + 
+  geom_bar(color = 'black', stat = 'identity') +
+  theme_bw()
+
+plot1
 ```
