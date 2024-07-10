@@ -1,0 +1,135 @@
+6.1922 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+6.1928 	INFO 	Loaded monitor calibration from ['2023_01_22 19:25']
+6.4120 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000010FC728BB80>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000010FC728BB20>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000010FC728B970>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000010FC7736730>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.4121 	EXP 	window1: mouseVisible = True
+6.4121 	EXP 	window1: backgroundImage = ''
+6.4121 	EXP 	window1: backgroundFit = 'none'
+6.4122 	EXP 	window1: mouseVisible = True
+6.4124 	EXP 	window1: mouseVisible = True
+6.4143 	EXP 	window1: mouseVisible = True
+6.4149 	EXP 	window1: mouseVisible = True
+6.4201 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4213 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4226 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4242 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4257 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4267 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4280 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4295 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4302 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4311 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4324 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4336 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4348 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4361 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4372 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4384 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4397 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4406 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4416 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4431 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4440 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4443 	DEBUG 	Uploading Texture Font fontname to graphics card
+6.4463 	DEBUG 	Upload of Texture Font fontname complete
+6.4477 	EXP 	window1: mouseVisible = True
+6.4481 	EXP 	window1: mouseVisible = True
+6.4488 	EXP 	window1: mouseVisible = True
+6.4493 	EXP 	window1: mouseVisible = True
+6.4534 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4551 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4568 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.4570 	DEBUG 	Uploading Texture Font fontname to graphics card
+6.4581 	DEBUG 	Upload of Texture Font fontname complete
+6.4603 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.4603 	EXP 	window1: recordFrameIntervals = False
+6.6350 	EXP 	window1: recordFrameIntervals = True
+6.8173 	EXP 	Screen (0) actual frame rate measured at 59.99Hz
+6.8173 	EXP 	window1: recordFrameIntervals = False
+6.8174 	EXP 	window1: mouseVisible = False
+6.8183 	EXP 	window1: mouseVisible = True
+6.8185 	EXP 	window1: mouseVisible = True
+6.8191 	EXP 	window1: mouseVisible = True
+6.8196 	EXP 	window1: mouseVisible = True
+6.8240 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8250 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8264 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8281 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8298 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8313 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8323 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8338 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8354 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8368 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.8371 	DEBUG 	Uploading Texture Font fontname to graphics card
+6.8375 	DEBUG 	Upload of Texture Font fontname complete
+6.8392 	EXP 	window1: mouseVisible = True
+6.8393 	EXP 	window1: mouseVisible = True
+6.8400 	EXP 	window1: mouseVisible = True
+6.8407 	EXP 	window1: mouseVisible = True
+6.8880 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+9.3587 	INFO 	keyboard.Keyboard is using iohub backend.
+9.4106 	INFO 	keyboard.Keyboard is using iohub backend.
+9.4107 	EXP 	Metalinguistic Conjunctives: status = STARTED
+9.4108 	EXP 	window1: mouseVisible = True
+9.4172 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+9.4174 	EXP 	window1: mouseVisible = True
+9.4686 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Press Anywhere to continue.', units='height', win=Window(...), wrapWidth=1)
+9.4686 	EXP 	window1: mouseVisible = True
+9.4687 	EXP 	window1: mouseVisible = True
+9.4701 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5037 	EXP 	Sound sound_1 set volume 1.000
+9.5038 	EXP 	window1: mouseVisible = True
+9.5086 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+9.5086 	EXP 	window1: mouseVisible = True
+9.5126 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+9.5127 	EXP 	window1: mouseVisible = True
+9.5137 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5138 	EXP 	window1: mouseVisible = True
+9.5245 	EXP 	Sound sound_2 set volume 1.000
+9.5246 	EXP 	window1: mouseVisible = True
+9.5266 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.5267 	EXP 	window1: mouseVisible = True
+9.5421 	EXP 	Created text_done = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_done', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0010 	DATA 	Mouse: Left button down, pos=(372,284)
+0.0014 	DATA 	Mouse:  Left button up, pos=(373,284)
+0.1098 	DEBUG 	Read csv file with pandas: experiment_conditions.csv
+0.1105 	DEBUG 	Clearing unnamed columns from experiment_conditions.csv
+0.1113 	EXP 	Imported experiment_conditions.csv as conditions, 10 conditions, 10 params
+0.1116 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+0.1118 	EXP 	New trial (rep=0, index=0): OrderedDict([('condition', 'or'), ('image_shown', 'known_objects/cup.png'), ('image_to_select1', 'NOUN-2-600DPI/2003-600.jpg'), ('image_to_select2', 'known_objects/cup.png'), ('image1_label', 'hane'), ('image2_label', 'cup'), ('text1', 'This is a cup or a hane.'), ('prompt1', 'Choose the hane.'), ('audio_text', 'audio/audio_text/amp_normed/Cup_or_Hane.wav'), ('audio_prompt', 'audio/audio_prompt/amp_normed/Cup_or_Hane.wav')])
+0.1537 	EXP 	Sound sound_1 started
+0.1579 	EXP 	image: image = 'known_objects/cup.png'
+0.1579 	EXP 	text_4: height = 0.07
+0.1579 	EXP 	text_4: height = 0.07
+0.1579 	EXP 	text_4: height = 0.07
+0.1579 	EXP 	text_4: text = 'This is a cup or a hane.'
+0.1579 	EXP 	image: autoDraw = True
+0.1579 	EXP 	text_4: autoDraw = True
+0.5099 	EXP 	text: autoDraw = True
+0.7806 	DATA 	Mouse: Left button down, pos=(335,197)
+0.9123 	DATA 	Mouse:  Left button up, pos=(335,196)
+2.0455 	DATA 	Mouse: Left button down, pos=(444,200)
+2.1621 	DATA 	Mouse:  Left button up, pos=(445,200)
+2.3237 	EXP 	Sound sound_1 reached end of file
+3.3293 	DATA 	Mouse: Left button down, pos=(390,66)
+3.4454 	DATA 	Mouse:  Left button up, pos=(390,66)
+4.1123 	DATA 	Mouse: Left button down, pos=(372,333)
+4.1955 	DATA 	Mouse:  Left button up, pos=(372,333)
+4.4455 	DATA 	Mouse: Left button down, pos=(557,305)
+4.5453 	DATA 	Mouse:  Left button up, pos=(557,305)
+4.9454 	DATA 	Mouse: Left button down, pos=(657,266)
+5.0288 	DATA 	Mouse:  Left button up, pos=(659,251)
+5.3313 	DATA 	Mouse: Left button down, pos=(615,48)
+5.4454 	DATA 	Mouse:  Left button up, pos=(615,48)
+13.3499 	DATA 	Mouse: Left button down, pos=(320,446)
+13.4281 	DATA 	Mouse:  Left button up, pos=(320,446)
+13.5291 	DATA 	Keypress: escape
+13.6287 	EXP 	Metalinguistic Conjunctives: status = STOPPED
+13.6419 	EXP 	image: autoDraw = False
+13.6419 	EXP 	text: autoDraw = False
+13.6419 	EXP 	text_4: autoDraw = False
+13.6442 	EXP 	Metalinguistic Conjunctives: status = STOPPED
+13.6468 	INFO 	saved data to 'D:\\PhD Stuff\\Linguistics Stuff\\metaconjunctive\\metaconjunctive\\data/_Metalinguistic Conjunctives_2024-05-15_14h00.08.957.csv'
+13.6578 	INFO 	saved data to D:\PhD Stuff\Linguistics Stuff\metaconjunctive\metaconjunctive\data/_Metalinguistic Conjunctives_2024-05-15_14h00.08.957.psydat
+13.7056 	EXP 	window1: mouseVisible = True
+14.2938 	DEBUG 	Saving data for Metalinguistic Conjunctives ExperimentHandler
