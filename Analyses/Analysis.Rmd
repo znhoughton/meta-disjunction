@@ -31,13 +31,15 @@ length(unique(data$id)) == 50
 
 data = data %>% 
   mutate('image_selected' = ifelse(mouse_2.clicked_name == 'image_2', image1_label, image2_label)) %>%
-  select(image_to_select1, image_to_select2, image1_label, image2_label, participant, trials.thisN, condition, image_shown, text1, prompt1, image_selected, date)
+  select(image_to_select1, image_to_select2, image1_label, image2_label, id, trials.thisN, condition, image_shown, text1, prompt1, image_selected, date)
 
 data = data %>%
   rename('trial' = trials.thisN) #rename trial
 
 data = data %>%
-  mutate(dep_variable = ifelse(image_selected == image2_label, 1, 0)) # we'll rename this later
+  mutate(dep_variable = 
+         case_when(condition != 'label' ~ ifelse(image_selected == image2_label, 1, 0),
+         condition == 'label' ~ ifelse(image_selected == image1_label, 1, 0)))
 
 data$dep_variable = as.numeric(data$dep_variable)
 
@@ -51,11 +53,11 @@ Failing the negation and mutual exclusivity trials
 ```{r}
 data = data %>%
   #na.omit() %>%
-  group_by(participant) %>%
+  group_by(id) %>%
   filter(!(any((condition == 'not' | condition == 'mutual_ex') & dep_variable == 1, na.rm = T))) %>%
   ungroup()
 
-
+#5 participants excluded
   
 
 ```
@@ -69,7 +71,7 @@ options (contrasts = c('contr.sum','contr.sum'))
 
 #priors = #need to decide our priors for this model
 
-m1 = brm(dep_variable ~ condition + (1 + condition|trial) + (1|participant),
+m1 = brm(dep_variable ~ condition + (1 + condition|trial) + (1|id),
          data = data,
          iter = 4000,
          warmup = 2000,
@@ -83,7 +85,7 @@ m1 = brm(dep_variable ~ condition + (1 + condition|trial) + (1|participant),
 ```{r}
 conditional_effects(m1)
 
-plot_data = pilot_data %>%
+plot_data = data %>%
   group_by(condition) %>%
   summarize(prop_selected = sum(dep_variable) / n()) %>%
   na.omit()
